@@ -1,11 +1,10 @@
-/* Demonstrate a higher order function (JavaScript sort() function)
+/* Demonstrate a higher order function (the JavaScript sort() function)
 and how to use it to implement sorting an array by two different
 sorting criteria.
 
-Requires NodeJS be installed on your computer
+Requires NodeJS to be installed on your computer
 
 Run:
-
 node funcs.js
 
 */
@@ -31,7 +30,8 @@ function compare_by_alphabetic_order(s1,s2) {
 // Test one of the comparison functions
 console.log(compare_by_string_lengths('a', 'bb'));
 
-
+// Sort cities by city name length
 console.log(cities.sort(compare_by_string_lengths));
 
+// Sort cities alphabetically
 
