@@ -7,6 +7,8 @@ Requires NodeJS to be installed on your computer
 Run:
 node funcs.js
 
+Other challenges:  sort the list by number of vowels
+
 */
 
 var cities = ['Cinncinati', 'Orem', 'Bethesda', 'San Francisco'];
