@@ -6,4 +6,3 @@ but with every word fully capitalized.
 
 */
 
-
