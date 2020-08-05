@@ -34,4 +34,6 @@ console.log(compare_by_string_lengths('a', 'aaa'));
 console.log(cities.sort(compare_by_string_lengths));
 
 // Sort cities alphabetically
+// (complete this code here)
+
 
