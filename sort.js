@@ -1,5 +1,5 @@
-/* Demonstrate a higher order function (the JavaScript sort() function)
-and how to use it to implement sorting an array by two different
+/* Demonstrate a higher order function, the JavaScript sort() function,
+how to use it to implement sorting an array by two different
 sorting criteria.
 
 Requires NodeJS to be installed on your computer
@@ -23,19 +23,22 @@ function compare_by_string_lengths(s1,s2) {
     }
 }
 
-// Complete this function implementation
-function compare_by_alphabetic_order(s1,s2) {
+// Test one of the comparison functions
+console.log(compare_by_string_lengths('a', 'aaa'));
+
+
+// TODO: Complete this function implementation
+function compare_alphabetically(s1,s2) {
 
 }
 
 
-// Test one of the comparison functions
-console.log(compare_by_string_lengths('a', 'aaa'));
+
 
 // Sort cities by city name length
 console.log(cities.sort(compare_by_string_lengths));
 
-// Sort cities alphabetically
-// (complete this code here)
+// Sort cities alphabetically and print
+// (TODO: complete this code here)
 
 
