@@ -28,7 +28,7 @@ function compare_by_alphabetic_order(s1,s2) {
 
 
 // Test one of the comparison functions
-console.log(compare_by_string_lengths('a', 'bb'));
+console.log(compare_by_string_lengths('a', 'aaa'));
 
 // Sort cities by city name length
 console.log(cities.sort(compare_by_string_lengths));
