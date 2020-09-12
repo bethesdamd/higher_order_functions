@@ -65,7 +65,7 @@ function stringify(input_object) {
             concat to string_out
         else if it is an Object:
             // Not sure stringify() can see your string_out, you might have to pass it in
-            call this function:  stringify(value)   // this is the critical part
+            string_out.concat(stringify(value))   // this is the critical part
         else if it is an Array:
             <for you to figure out>
     }
