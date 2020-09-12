@@ -55,7 +55,7 @@ I have not written my own implementation of stringify yet, however this is how I
 
 
 pseudo code, this should handle nested objects, not sure about how it would handle other things like arrays
-or nested arrays
+or nested arrays...
 
 function stringify(input_object) {
     const string_out = ''
@@ -64,7 +64,7 @@ function stringify(input_object) {
         if the value is a scalar (string or integer):
             concat to string_out
         else if it is an Object:
-            call stringify(value)
+            call this function:  stringify(value)   // this is the critical part
         else if it is an Array:
             <for you to figure out>
     }
