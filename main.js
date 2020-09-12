@@ -47,8 +47,10 @@ Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); 
 /*
 I have not written my own implementation of stringify yet, however this is how I would approach it:
 
-1) Use the forEach() example above to iterate through the key/value pairs
+1) Start with an empty string s.  Use the forEach() example above to iterate through the key/value pairs
 2) Examine the value; if it's iterable (an object, or an array, versus a string or int),
    then you have to recurse and call this function on the value.
+3) Use s.concat() as you go to concatenate output to s.
+4) At the end, return s
 
 
