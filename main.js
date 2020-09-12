@@ -54,3 +54,19 @@ I have not written my own implementation of stringify yet, however this is how I
 4) At the end, return s
 
 
+pseudo code, this should handle nested objects, not sure about how it would handle other things like arrays
+or nested arrays
+
+function stringify(input_object) {
+    const string_out = ''
+    for each key, value in input_object {
+        concat the key to the string_out with punctuation
+        if the value is a scalar (string or integer):
+            concat to string_out
+        else if it is an Object:
+            call stringify(value)
+        else if it is an Array:
+            <for you to figure out>
+    }
+    return string_out
+}
