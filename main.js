@@ -1,3 +1,5 @@
+// Lucy recursive implementation of JSON.stringify()
+
 // BTW I'm editing this file in VS Code and then using the 'node' executable to run it in the terminal
 // I don't recall if you're using node...
 
