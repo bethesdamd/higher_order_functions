@@ -34,7 +34,7 @@ console.log(JSON.stringify(a))
 // nested object
 const n = {
     a: {'a1': 1, 'a2': 2},
-    b: 42
+    b: 40
   };
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
@@ -42,7 +42,15 @@ console.log(JSON.stringify(Object.entries(n)))
 
 const obj = { foo: 'bar', baz: 42 };
 // Using Array Destructuring, you can iterate through objects:
-Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`)); // "foo: bar", "baz: 42"
+var str = '';
+Object.entries(obj).forEach(([key, value]) => {
+    str += `'${key}': '${value}', `;
+});
+console.log(str);
+
+
+
+
 
 /*
 I have not written my own implementation of stringify yet, however this is how I would approach it:
